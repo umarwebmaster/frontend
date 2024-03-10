@@ -1,0 +1,133 @@
+
+/* Track */
+::-webkit-scrollbar {
+    width: 15px; /* width of the scrollbar */
+}
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #00ffea6c; /* color of the scrollbar handle */
+    border-radius: 50px;
+
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #05f5b9; /* color of the scrollbar handle when hovered */
+  }
+
+.to-do{
+    position: relative;
+    max-width: 100vw;
+    height: 100vh;
+    background: #2b5482;
+    font-family:'Rockwell';
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.main{
+    position: absolute;
+    margin: auto;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 106, 0, 0.202);
+    box-shadow: 0 0 0 1px rgb(240, 115, 38), 0 0 0 2px rgb(255, 153, 0); /* Adjust colors and spread as needed */
+    border-radius: 10px;
+    color: rgb(0, 255, 229);
+    margin: 0.6rem;
+
+}
+.header *{
+    margin: 5px;
+}
+
+.header, .writer, .body{
+    width: 30%;
+    position: relative;
+    text-align: center;
+    padding: 0.6rem;
+    color: rgb(255, 255, 255);
+}
+.writer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.writer input, .writer button,.writer i{
+    position: relative;
+    height: 50px;
+    background-color: rgb(201, 201, 201);
+    border: none;
+    padding: 0.6rem;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    resize: none;
+}
+.writer i{
+    border-bottom: solid black 2px;
+    background-color: rgb(50, 49, 49);
+    color: aliceblue;
+    font-size: 1.3rem;
+
+}
+.writer input{
+    border-bottom: solid black 2px;
+    background-color: rgb(201, 201, 201);
+    width: 110%;
+    font-size: 1.3rem;
+}
+
+.writer button{
+    width: 30%;
+    box-shadow: none;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: rgb(0, 0, 0) ;
+    background-color: rgba(255, 157, 0, 0.900);
+
+    border-radius: 0;
+
+
+}
+.writer button:hover{
+    background-color: rgb(255, 157, 0);
+    
+}
+
+.writer input:focus{
+    outline: none;
+    border-bottom: solid rgb(132, 129, 129) 5px;
+    
+}
+
+.body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    box-sizing:content-box;
+    height: 50vh;
+    font-size: 1rem;
+    overflow-y: scroll;
+    overflow-x: scroll;
+
+}
+.body span{
+    display: inline;
+    font-size: 2rem;
+}
+
